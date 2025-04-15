@@ -22,10 +22,10 @@ const fromYenToPound = function(valueInYen) {
 }
 
 let oneEuroIs = {
-    "JPY": 156.5, // japan yen
-    "USD": 1.07, // us dollar
-    "GBP": 0.87, // british pound
-}
+    "JPY": 156.5, // Japan yen
+    "USD": 1.07, // US dollar
+    "GBP": 0.87, // British pound
+};
 
 
 // This is my function that sums two numbers
@@ -38,10 +38,6 @@ console.log(sum(7,3))
 
 // Export the function to be used on other files 
 // (similar to the keyword "export" when using webpack)
-module.exports = { 
-    sum, 
-    fromEuroToDollar, 
-    fromDollarToYen, 
-    fromYenToPound, 
-    oneEuroIs 
-};
+module.exports = { sum, fromEuroToDollar };
+module.exports = { sum, fromDollarToYen };
+module.exports = { sum, fromYenToPound };
